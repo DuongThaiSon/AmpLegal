@@ -276,6 +276,7 @@ header {
 
 .team-item {
     margin: 0 25px;
+    position: relative;
 }
 
 .team-img img {
@@ -289,14 +290,17 @@ header {
     text-align: center;
     padding: 20px 0;
     position: absolute;
-    bottom: -140px;
-    width: 86%;
+    bottom: -144px;
+    width: 100%;
     transition: .3s ease;
 }
 
-.team-name {
+.team-name a{
     color: #fff;
     font-size: 21px;
+}
+.team-name a:hover{
+    text-decoration: none;
 }
 
 .team-role {
@@ -765,54 +769,160 @@ footer .d-flex {
     width: 100%;
     background: #1a4388;
 }
-.box-news--detail_title{
+
+.box-news--detail_title {
     text-transform: uppercase;
     margin-top: 15px;
 }
-.box-news--detail_title h4{
+
+.box-news--detail_title h4 {
     font-size: 16px;
     text-align: left;
     font-weight: bold;
     letter-spacing: 0.3px;
 }
-.box-news--detail_user{
+
+.box-news--detail_user {
     margin-top: 22px;
 }
-.box-news--content{
+
+.box-news--content {
     margin-top: 45px;
 }
-.relate-text{
+
+.relate-text {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 50px;
     text-transform: uppercase;
 }
+
 .news-detail .box-news--tag {
     background: #fff;
     border: none;
 }
+
 .news-detail .box-news--info {
     background: #fff;
     border: none;
 }
-.box-share a:hover{
+
+.box-share a:hover {
     color: #d7a850 !important;
 }
-#search{
+
+#search {
     padding: 55px 0;
 }
-.search-title{
+
+.search-title {
     font-weight: bold;
     font-size: 36px;
     margin-bottom: 80px;
 }
-/* #search .box-news--banner{
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%
-} */
 
+.law-team {
+    padding: 65px 0;
+}
 
+.law-team .nav-pills {
+    margin-top: 50px;
+    padding: 25px 70px;
+    border: 1px solid #eaeaea;
+}
+
+.law-team .nav-pills .nav-item {
+    margin-right: 21px;
+}
+
+.law-team .nav-pills li .active {
+    background: unset !important;
+    color: #1a4388;
+    font-weight: bold;
+}
+
+.law-team .nav-pills a:hover {
+    text-decoration: none;
+    color: #1a4388;
+}
+
+.law-team .tab-content {
+    padding-top: 55px;
+}
+
+.law-team .tab-content .col-lg-4 {
+    overflow: hidden;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.lawyer-avatar{
+    height: 280px;
+    overflow: hidden;
+}
+.lawyer-info{
+    padding: 70px 0 70px 20px;
+}
+.lawyer-info div{
+    margin-bottom: 10px;
+}
+.lawyer-name{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #1a4388;
+}
+.lawyer-email{
+    color: #1a4388;
+    text-decoration: underline;
+}
+.lawyer-exp--title{
+    font-size: 20px;
+    color: #1a4388;
+    margin-top: -7px;
+}
+.lawyer-exp ul li::before{
+    content: "\25A0";
+    color: #1a4388;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+}
+.lawyer-detail--info{
+    padding: 40px 0;
+    border-top: 1px solid #eaeaea;
+    margin-top: 20px;
+}
+.lawyer-detail--info h2{
+    font-size: 20px;
+    color: #1a4388;
+    margin-bottom: 20px;
+}
+
+.lawyer-detail--info_links li{
+    margin-right: 16px;
+}
+.lawyer-detail--info_links li a{
+    font-size: 20px;
+}
+.lawyer-detail--info_links li a:hover{
+    color: #d7a850;
+}
+.lawyer-detail--info_links li:nth-last-child(1){
+    margin-right: 0;
+}
+.news-box--img{
+    margin-bottom: 10px;
+}
+.news-box--img img{
+    width: 100%;
+}
+#contact .d-flex{
+    margin-top: 20px;
+}
+#contact .footer-icon i{
+    color: #1a4388;
+}
 
 
 
@@ -844,7 +954,7 @@ footer .d-flex {
         height: auto;
     }
 
-    .tab-content .row .col-lg-6:nth-child(2) {
+    #news .tab-content .row .col-lg-6:nth-child(2) {
         margin-top: 65px;
     }
 
@@ -887,11 +997,42 @@ footer .d-flex {
         margin-top: 15px;
     }
 
-    #search .box-news--info{
+    #search .box-news--info {
         padding-top: 20px !important;
     }
+
     .main-pagination {
         justify-content: center;
+    }
+
+    .search-title {
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+    .law-team .nav-pills {
+        padding: 25px 25px;
+    }
+    .law-team .tab-content {
+        padding-top: 25px;
+    }
+    .lawyer-info {
+        padding: 0;
+        margin-top: 30px;
+    }
+    .lawyer-detail--info_portfolio{
+        text-align: center;
+    }
+    .lawyer-detail--info_links{
+        justify-content: center !important;
+    }
+    .banner-text h1 {
+        font-size: 60px;
+    }
+    .lawyer-detail--info {
+        padding-bottom: 0;
+    }
+    .form-contact{
+        margin-top: 30px;
     }
 }
 
@@ -935,8 +1076,30 @@ footer .d-flex {
     #news-page .tab-content {
         margin-top: 15px;
     }
+
     .main-pagination {
         justify-content: center;
+    }
+    .lawyer-detail--info_portfolio{
+        text-align: center;
+    }
+    .lawyer-detail--info_links{
+        justify-content: center !important;
+    }
+    .banner-text h1 {
+        font-size: 60px;
+    }
+    .lawyer-detail--info {
+        padding-bottom: 0;
+    }
+    #news .tab-content .row .col-lg-6:nth-child(2) {
+        margin-top: 65px;
+    }
+    .form-contact{
+        margin-top: 30px;
+    }
+    #search .box-news--info {
+        padding-top: 20px !important;
     }
 }
 
@@ -953,7 +1116,7 @@ footer .d-flex {
         padding: 0;
     }
 
-    .tab-content .row .col-lg-6:nth-child(2) {
+    #news .tab-content .row .col-lg-6:nth-child(2) {
         margin-top: 65px;
     }
 
@@ -984,6 +1147,15 @@ footer .d-flex {
     .box-news--user {
         height: 65px;
     }
+    .law-team .nav-pills {
+        padding: 25px 50px;
+    }
+    .lawyer-avatar {
+        text-align: center;
+    }
+    .lawyer-detail--info_links{
+        margin-top: 0 !important;
+    }
 }
 
 @media (min-width: 992px) and (max-width:1199px) {
@@ -1006,8 +1178,14 @@ footer .d-flex {
     #news-page .nav-pills {
         padding: 25px 35px;
     }
+    .law-team .nav-pills {
+        padding: 25px 35px;
+    }
 
     #news-page .tab-content {
+        margin-top: 20px;
+    }
+    .law-team .tab-content {
         margin-top: 20px;
     }
 
@@ -1016,6 +1194,9 @@ footer .d-flex {
     }
 
     #news-page .nav-pills .nav-item {
+        margin-right: 11px;
+    }
+    .law-team .nav-pills .nav-item {
         margin-right: 11px;
     }
 }
